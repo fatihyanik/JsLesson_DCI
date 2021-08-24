@@ -96,3 +96,26 @@ let myOtherFraction = 1/0;
 console.log('myOtherFraction is ' , myOtherFraction);//Infinity
 console.log(isNaN(myOtherFraction));//false
 console.log(myOtherFraction === myOtherFraction); //true
+
+//but beware of false positives
+console.log(isNaN('Hello'));//true
+
+//reliable tests
+console.log(Number.isNaN('Hello'));//false
+console.log('Hello' === 'Hello');//true
+
+//statements vs expressions
+//expressions have a value, statements end in a semicolon and do something
+console.log('hi'); // statement
+2 + 2 === 5; // expression with value false
+
+//escape character(\), escape sequences(\')
+console.log('I can\'t do this'); //single (double) quotes are string delimiters
+console.log(`I can't do this`); 
+console.log("I can't do this"); 
+console.log('He said "Yes first, then "No"');
+
+// use the escape sequence \n to start a new line
+console.log('Line 1 \nLine 2');
+console.log(`Line 1 
+Line 2`);

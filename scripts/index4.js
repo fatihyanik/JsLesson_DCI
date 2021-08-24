@@ -82,4 +82,17 @@ console.log(typeof NaN); // number
 console.log(NaN === NaN);// false 
 
 // isNaN(x) determines if value is NaN; so does x !== x
+let myProduct = 3 * 'John'; //NaN
+console.log('myProduct is ' + myProduct);
+console.log(isNaN(myProduct));//true
+console.log(myProduct !== myProduct); //true
 
+let myFraction = 0/0;
+console.log('myFraction is' + myFraction);
+console.log(isNaN(myFraction));//true
+console.log(myFraction === myFraction);// false(correct answer)
+
+let myOtherFraction = 1/0;
+console.log('myOtherFraction is ' , myOtherFraction);//Infinity
+console.log(isNaN(myOtherFraction));//false
+console.log(myOtherFraction === myOtherFraction); //true

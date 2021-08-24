@@ -119,3 +119,24 @@ console.log('He said "Yes first, then "No"');
 console.log('Line 1 \nLine 2');
 console.log(`Line 1 
 Line 2`);
+
+// string interpolation, template strings: embedding expressions in strings
+let firstName = 'Don';
+console.log(`Hi, ${firstName}.`);
+
+// string methods (String.prototype.<methodname>)
+let str = 'Hello';
+console.log(str.length);//5
+console.log(str[0]); //index : position in the string; strings are 0-indexes: the first character is at position 0
+console.log(str[str.length-1]);//o is last character
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.substring(1,3));// str.substring(startIndex, endIndex) (startIndex: included, endIndex: not included)
+console.log(str.slice(1,3));//el
+console.log(str.includes('lo'));//true
+console.log(str.substring(0,3).toUpperCase());//HEL
+
+let myStr = ' hi ';
+console.log(myStr);
+console.log(myStr.trim());
+console.log(myStr.trim().length);

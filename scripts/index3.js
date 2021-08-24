@@ -1,4 +1,4 @@
-1. What do call the area within curly braces?
+1. /*What do call the area within curly braces?
 2. What does "+=" mean?
 3. List all falsy values.
 4. What is logged to the console by "console.log('undefined' && val);", where val is truthy?
@@ -43,4 +43,4 @@
    Binary Operators: Operators that operates or works with two operands are binary operators.
 16)val
 17)Undefined: It occurs when a variable has been declared but has not been assigned with any value. 
-   Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using var or const keyword
+   Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using var or const keyword*/

@@ -37,17 +37,15 @@ console.log(str9);
 console.log(str9+str8+str9);
 
 //2.Way
-let word="Stritch";
+let word="Scritch";
 last3=word.substring(word.length-3);
 console.log(last3+word+last3);
-
-
 
 //Create a new string from a given string by changing the position of first and last characters. 
 //The string length must be greater than or equal to 2, i.e., expected output: BoogieWoogie => eoogieWoogiB
 let str10="BoogieWoogie";
-str11=str10.substring(0,1);
-str12=str10[str10.length-1];
+str11=str10.substring(0,1);//B
+str12=str10[str10.length-1];//e
 console.log(str12+str10.substring(1,12)+str11);
 
 //Create 3 different variables about yourself, using strings as values, i.e, let firstName = “Maria”; let city = “Berlin”, etc. 
@@ -62,3 +60,9 @@ console.log("My name is " + firstName + ". I live in " +  city + " and I am a " 
 //Capitalize the first letter of that string. Print the result to the console.
 let value= "the quick brown fox";
 console.log(value.substring(0,1).toUpperCase()+value.substring(1));
+console.log(value[0].toUpperCase()+value.substring(1));
+
+let str20 ='the quick brown fox';
+let firstChar =str20[0].toUpperCase();
+let rest = str20.slice(1);
+console.log(`${firstName}${rest}`);

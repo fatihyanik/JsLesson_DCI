@@ -6,9 +6,9 @@
 
 //Declare a variable with the value of “I can walk in the park all day!“. Print the word “park” to the console.
 let str1 = "I can walk in the park all day!";
-let park = str1.substring(18,23);
-console.log(`${park}`);
-console.log(str1.substring(18,23));
+let park = str1.substring(18,22);
+console.log(`word is : ${park}`);
+console.log(str1.substring(18,22));
 
 //Declare a variable with the value of “Hello World”. Covert the value to upper case and print the converted value to the console.
 let str2 ="Hello World";

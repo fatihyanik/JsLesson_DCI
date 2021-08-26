@@ -92,8 +92,28 @@ if(str.indexOf("Py") ===0){
 }else{
     console.log(strPrefix + str);
 }
+
+//2.Way
+let strPrefix2 = "Hello";
+let py = "Pytih";
+if(py.startsWith("Py")){
+    console.log(py);
+}else{
+    console.log(strPrefix2 + " " + py);
+}
+
+//3.Way
+let strPrefix3 = "Hello";
+let py3 = "Pytih";
+if(py3.includes("Py",0)){
+    console.log(py3);
+}else{
+    console.log(strPrefix3 + " " + py3);
+}
+
+
 //Calculate the sum of the two integers. If the sum is in the range 50 to 80, print 65, otherwise print 80.
-const num4 =10, num5 = 50;
+const num4 =10, num5 = 18;
 const sum = num4+num5;
 if(sum>=50 && sum<=80){
     console.log(65);
@@ -103,6 +123,8 @@ if(sum>=50 && sum<=80){
 //Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 if(sum ===8 || num4-num5===8 || num5-num4===8){
     console.log(true);
+}else{
+    console.log(false);
 }
 //Check whether either one of two integers is 15, or if their sum is 15. If one of these is the case, print true.
 if(num4 === 15 || num5 ===15 || sum===15){

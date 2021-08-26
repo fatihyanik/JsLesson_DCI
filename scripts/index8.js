@@ -163,3 +163,46 @@ if(age < 13){
 
 
 //BONUS CHALLENGE: Play around with each of your results, i.e., make sure they are dynamic to different inputs; is there a more efficient way of writing your code?; etc.
+
+//Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
+//BMI = mass / (height * height). (mass in kg, i.e. 72.5, and height in metres, i.e. 1.65).
+//Store Mark’s and John’s mass and height in variables.
+let markMass = 80;
+let johnMass = 70;
+let markHeight = 1.80;
+let johnHeight = 1.70;
+
+//Calculate both their BMIs and store their BMIs in variables.
+markBMI = (markMass/(markHeight*markHeight)).toFixed(2);
+console.log(markBMI);
+johnBMI = (johnMass/(johnHeight*johnHeight)).toFixed(2);
+console.log(johnBMI);
+//Create a boolean variable containing information about whether Mark has a higher BMI than John.
+if(markBMI>johnBMI){
+    console.log(`Marks BMI of ${markBMI} is greater than Johns BMI of ${johnBMI} `);
+}else if(johnBMI>markBMI){
+    console.log(`Marks BMI of ${markBMI} is smaller than Johns BMI of ${johnBMI} `);
+}else{
+    console.log(`Marks BMI of ${markBMI} is the same with Johns BMI of ${johnBMI} `);
+}
+//Print a string to the console containing the variable from step 3 using string interpolation.
+// (e.g. “Is Mark’s BMI higher than John’s? Why yes, it’s [boolean], it is”).
+//Create an if statement which prints the name and BMI of the person with the highest BMI.
+
+//2.Way
+/*
+const [heightMark, heightJohn, massMark, massJohn] = [1.70, 1.80, 70, 80];
+function calcBMI(height, mass) {
+    const BMI = (mass / (height * height)).toFixed(2);
+    return BMI;
+  }
+  let markBMI = calcBMI(heightMark, massMark);
+  let johnBMI = calcBMI(heightJohn, massJohn);
+  if(markBMI > johnBMI) {
+    console.log(`Marks BMI of ${markBMI} is greater than Johns BMI of ${johnBMI}.`)
+  } else if(johnBMI > markBMI) {
+    console.log(`Marks BMI of ${markBMI} is smaller than Johns BMI of ${johnBMI}.`)
+  } else {
+    console.log(`Their BMI is the same with ${johnBMI}.`)
+  };
+  */

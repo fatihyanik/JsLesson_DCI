@@ -65,17 +65,19 @@ console.log(joinArray);
 //Extra Practice
 //Print the results to the console.
 //Make an array of your siblings’ names or your favorite movie characters’ names.
-const myFamily = ["Abidin", "Fatma", "Ahmet", "Dilek", "Murat"];
+const movieChars = ["Batman", "Spiderman", "Superman", "Coderman", "Hackerman"];
 //Make an array of your parents’ names.
 //Combine these two arrays.
-const myFamily2 = ["Zeynep", "Duru"];
-const myFamily3 =myFamily.concat(myFamily2);
+const parents = ["Father", "Mother"];
+const combined =movieChars.concat(parents);
 //Add your pets’ names.
-myFamily3.push("Mavis", "Fistik");
+combined.push("Mavis", "Fistik");
 //Reverse the order of the array.
-myFamily3.reverse();
+combined.reverse();
 //Access one of your parents’ names.
-const myFather = myFamily3.indexOf("Abidin");
+const myFather = combined.indexOf("Abidin");
+console.log(combined[3]);
 //Update the name of one of your parents.
-myFamily3.splice(myFather, 1, "Yanik");
-console.log(myFamily3);
+combined.splice(3, 1, "newFather");
+console.log(combined);
+

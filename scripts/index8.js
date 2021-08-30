@@ -206,3 +206,45 @@ function calcBMI(height, mass) {
     console.log(`Their BMI is the same with ${johnBMI}.`)
   };
   */
+
+//1. Updater
+//Depending on the value of a variable (determiner), assign a value to x.
+//If determiner is less than 0, x’s value should be “Less than 0”
+//If determiner is greater or equal 0, x’s value should “Greater or equal to 0".
+/*
+const determiner = Math.round(Math.random()) * 2 -1;
+let x;
+if(determiner<0){
+    x = Math.floor(Math.random()) * -(3);
+}else{
+    x = Math.floor(Math.random() * (3))
+}
+console.log(determiner);
+*/
+
+/*
+const determiner = 100;
+const x = determiner >= 0 ? 'Greater or equal to 0' : 'Less than 0';
+console.log(x);
+*/
+
+//2. New Variables
+//Depending on the value of the determiner, assign a value to another variable (updater) and create another variable.
+//If determiner is greater of equal to 0, updater’s value should be “Greater or equal to 0” and create another variable called message, assign a value of “Positive Integer” and print message.
+//If determiner is less than 0, updater’s value should be “Less than 0”.
+let updater;
+if(determiner >= 0){
+    updater = 'Greater or eequal to 0';
+    const message = 'Positive integer';
+    console.log(message);
+} else{
+    updater = 'Less than 0';
+    console.log(updater);
+}
+
+//Question: What would happen if we tried to print “message” outside of the if statement? Comment your answer in the js file.
+
+
+
+//3. Ternary v.s. If statement
+//When do you use a ternary v.s. an if statement? Give an example.

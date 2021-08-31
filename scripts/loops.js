@@ -133,3 +133,48 @@ const friends = ["friend1", "friend2", "friend3", "friend4","friend5"];
 for(let i = 0; i<friends.length; i++){
     console.log(`${friends[i]} is at index ${i}`);
 }
+
+/*
+let s = [];
+for(let i =100; i<=1000; i+=100){
+    s.push(i);
+}
+console.log(s);
+console.log(s.join("...."));
+*/
+
+for(let i = 1; i<11; i++){
+    console.log(`${i}00`);
+}
+
+let a ="";
+for(let i =0; i<=10; i+=2){
+    a += i + " ";
+}
+console.log(a);
+
+let b = "";
+for(let i =3; i<=15; i+=3){
+    b+=i +" ";
+}
+console.log(b);
+
+for(let h=9; h>=0; h--){
+    console.log(h);
+}
+
+let e="";
+for(let i=1; i<=4; i++){
+    for(let j=1; j<=3; j++){
+        e+=i+ " ";
+    }
+    console.log(e);
+}
+
+var c = "madam";
+var k = c.split("").reverse().join("");
+if(k===c){
+    console.log("Its palindrome");
+}else{
+    console.log("not palindrome");
+}

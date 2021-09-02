@@ -163,3 +163,5 @@ function createSentence(words) {
     return sentence;
   }
 console.log(createSentence(arrStrings))
+
+//Do some research on the dangers of semicolon omission.  Copy any code examples that you think are useful.

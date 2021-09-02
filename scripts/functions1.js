@@ -139,7 +139,7 @@ function createSentence(words) {
   return sentence;
 */
 
-
+/*
 let arrStrings = ["Hello", "I", "am", "Fatih"];
 function createSentence(words) {
   let sentence = "";
@@ -149,3 +149,17 @@ function createSentence(words) {
     return sentence = sentence.trim() + '.';
   }
 console.log(createSentence(arrStrings));
+*/
+
+
+let arrStrings = ["Hello", "there"];
+function createSentence(words) {
+  let sentence = "";
+  for (let i = 0; i < words.length; i++) {
+    sentence += words[i] + " ";
+    if (i === words.length - 1)
+      sentence = sentence.trim() + ".";
+    }
+    return sentence;
+  }
+console.log(createSentence(arrStrings))

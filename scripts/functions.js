@@ -12,7 +12,7 @@ console.log(sum);
 console.log(add(3,5));
 */
 
-// function expression ( Function expressions are always part of larger statements)
+// function expression (Function expressions are always part of larger statements)
 /*
 const add = function(x,y){
     return x+y;

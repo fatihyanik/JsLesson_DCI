@@ -6,7 +6,7 @@
 // "="_ assignment operator
 // assignment statement : assigns the value of the expression on the right to the variable on the left
 // 1. declares the variable "myName", using the "let" keyword
-// 2. it assigns the variable "myNmae" the value of the expression "James Bond": "James Bond";
+// 2. it assigns the variable "myName" the value of the expression "James Bond": "James Bond";
 // 1. declare a let variable
 // 2. assign the variable the value "James Bond" (initialize the variable with the value "James Bond")
 

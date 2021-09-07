@@ -3,19 +3,19 @@
 //You may need to look up some methods to complete these tasks. Print each result to the console.
 //Declare a variable named “euroCities” and assign an array to the variable e.g. [“Paris”, “London”, “Valletta”, “Prague”, “Rome”].
 let euroCities =[ "Paris", "London", "Valletta", "Prague", "Rome"];
-console.log(euroCities);
+console.log(euroCities); //[ 'Paris', 'London', 'Valletta', 'Prague', 'Rome' ]
 //Declare another variable and assign the second item of the array as a value.
 const anotherVariable = euroCities[1];
 //Change the first item in the array to “Berlin”.
 euroCities[0] = "Berlin";
 //Print the length of the array “euroCities”.
-console.log(euroCities.length);
+console.log(euroCities.length); //5
 //Remove the last item of the array “euroCities”.
 euroCities.pop();
-console.log(euroCities);
+console.log(euroCities); //[ 'Berlin', 'London', 'Valletta', 'Prague' ]
 //Use an array method to add “Budapest” to the euroCities array.
 euroCities.push("Budapest");
-console.log(euroCities);
+console.log(euroCities); //[ 'Berlin', 'London', 'Valletta', 'Prague', 'Budapest' ]
 //Bonus: Remove the second and third items from the euroCities array.
 euroCities.splice(1,2);
 console.log(euroCities);

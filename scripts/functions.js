@@ -32,7 +32,7 @@ function squared(x){
 
 // function expressions are not hoisted
 /*
-console.log(cubed(2));//const varda burasi function'in ustne yaziamaz
+console.log(cubed(2));//const varsa burasi function'in ustne yaziamaz
 const cubed = function(x){
     return x*x*x;
 }

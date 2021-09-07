@@ -107,3 +107,8 @@ console.log(cases("HELLO"));
 // strange pair
 const strange = (str1, str2) => str1.charAt(0) === str2.charAt(str2.length - 1) || str1.charAt(str1.length -1) === str2.charAt(0);
 console.log(strange("hello", "okay"))
+
+throws
+interface
+program
+short

@@ -69,7 +69,7 @@ console.log(`${lastLetter}${middle}${firstLetter}`);
 //Print a sentence to the console using the variables and string interpolation, i.e., “My name is Maria. I live in Berlin and I am a teacher”.
 let firstName="Fatih";
 let city="Leipzig";
-let job="teacher";
+let job="developer";
 console.log(`My name is ${firstName}. I live in ${city} and I am a ${job} .`);
 console.log("My name is " + firstName + ". I live in " +  city + " and I am a " + job +".");
 

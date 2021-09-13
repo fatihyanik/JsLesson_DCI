@@ -24,7 +24,7 @@ console.log(add(3,5));
 //function declarations are hoisted(moved to the top of their scope),
 //so you can access the function before it is declared
 /*
-console.log(squared(2));
+console.log(squared(9));
 function squared(x){
     return x *x;
 }
@@ -32,7 +32,7 @@ function squared(x){
 
 // function expressions are not hoisted
 /*
-console.log(cubed(2));//const varsa burasi function'in ustne yaziamaz
+console.log(cubed(2));//const var ise burasi function'in ustne yaziamaz
 const cubed = function(x){
     return x*x*x;
 }
@@ -49,8 +49,9 @@ const double = function(x){
 // arrow function expression("return" keyword and braces around function body not)
 /*
 const double = x => 2 * x;
+console.log(double(5));//10
 const double4 =double(4);
-console.log(double4);
+console.log(double4);//8
 */
 
 // traditional function expression

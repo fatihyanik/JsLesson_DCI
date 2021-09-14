@@ -24,6 +24,8 @@ console.log(obj1); //{ firstName: 'Joe' }
 
 // 2. creating an object with the "new" keyword and the Object constructor function
 const obj2 = new Object(); //creates an empty object
+obj2.lastName = "Yanik";
+console.log(obj2);
 
 // 3. creating an object with Object.create(prototype);
 const obj3 = Object.create(obj1); //creates a new object that inherits from obj1

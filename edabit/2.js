@@ -8,21 +8,36 @@ Don't forget to return the result.
 Remember that the values are in an object.
 Volume is length * width * height.
 */
-
-function volumeOfBox(result){
-    return result.width*result.height*result.length;
+//1.Way
+function volumeOfBox(sizes){
+    return sizes.width*sizes.height*sizes.length;
 }
 console.log(volumeOfBox({ width: 2, length: 5, height: 1 }));
 console.log(volumeOfBox({ width: 4, length: 2, height: 2 }));
 console.log(volumeOfBox({ width: 2, length: 3, height: 5 }));
 
+//2.WAY
+const volumeOfBox1 =(sizes) => sizes.width * sizes.length *sizes.height;
+console.log(volumeOfBox1({ width: 2, length: 3, height: 5 }));
+
+
+//
+function volumeOfBox2(sizes){
+    let width = sizes.width;
+    let length = sizes.length;
+    let height = sizes.height;
+    return width*height*length;
+}
+console.log(volumeOfBox2({ width: 2, length: 3, height: 5 }));
 /*
-Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
+Create a function that takes an object as an argument and returns a string with facts about the city. 
+The city facts will need to be extracted from the object's three properties:
 
 1-name
 2-population
 3-continent
-The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).
+The string should have the following format: 
+X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).
 
 Examples
 cityFacts({
@@ -37,27 +52,59 @@ cityFacts({
   continent: "Asia"
 }) ➞ "Tokyo has a population of 13,929,286 and is situated in Asia"
 */
+// 1.WAY
+function cityFacts(city) {
+  return `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
+}
+console.log(cityFacts({
+  name: "Tokyo",
+  population: "13,929,286",
+  continent: "Asia"
+}));
 
-  function cityFacts(city){
+console.log(cityFacts({
+  name: "Paris",
+  population: "2,140,526",
+  continent: "Europe"
+}));
+
+
+//2.WAY (arrow function)
+const cityFacts1 = (city) => {
+  return city.name + " has a population of " + city.population + " and is situated in " + city.continent;
+}
+console.log(cityFacts1({
+  name: "Tokyo",
+  population: "13,929,286",
+  continent: "Asia"
+}));
+
+console.log(cityFacts1({
+  name: "Paris",
+  population: "2,140,526",
+  continent: "Europe"
+}));
+
+//3.Way
+  function cityFacts2(city){
     let name = city.name;
     let population =city.population;
     let continent = city.continent;
     return `${name} has a population ${population} and is situated in ${continent}`;
 }
 
-
-console.log(cityFacts({
+console.log(cityFacts2({
     name: "Tokyo",
     population: "13,929,286",
     continent: "Asia"
   }));
 
-console.log(cityFacts({
+console.log(cityFacts2({
     name: "Paris",
     population: "2,140,526",
     continent: "Europe"
   }));
-
+ 
 /*
 Write a function that returns true if a hash contains the specified key, and false otherwise.
 Examples
@@ -66,6 +113,7 @@ hasKey({ craves: true, midnight: true, snack: true }, "morning") ➞ false
 hasKey({ pot: 1, tot: 2, not: 3 }, "not") ➞ true
 */
 
+//1.Way
 function hasKey(obj, key){
     return key in obj;
 }
@@ -73,6 +121,11 @@ console.log(hasKey({ a: 44, b: 45, c: 46 }, "d"));
 console.log(hasKey({ craves: true, midnight: true, snack: true }, "morning"));
 console.log(hasKey({ pot: 1, tot: 2, not: 3 }, "not"));
 
+//2.WAY
+const hasKey1 = (obj, key) => obj[key]? true : false;
+console.log(hasKey1({ a: 44, b: 45, c: 46 }, "d"));
+console.log(hasKey1({ craves: true, midnight: true, snack: true }, "morning"));
+console.log(hasKey1({ pot: 1, tot: 2, not: 3 }, "not"));
 /*
 You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. 
 You are given an object containing the cost price per unit (in dollars), sell price per unit (in dollars), and the starting inventory. 

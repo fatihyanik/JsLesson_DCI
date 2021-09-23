@@ -63,3 +63,61 @@ numbers.sort(function(a, b){
     return a - b;
 });
 console.log(numbers);
+
+nums = [1, 2, 3, 4];
+let squares = nums.map(num => num * num);
+console.log(squares);
+console.log(nums);
+
+// the optional second and third parameters of forEach allow you too modify (mutate) the original array
+nums.forEach((num, index, arr) => arr[index] = num * num); // immutable.js
+console.log(nums);
+
+// for-loops vs forEach
+nums = [1,2,3,4,5];
+for (let i = 0; i <nums.length; i++){
+    console.log(nums[i]);
+    if(nums[i] > 2){
+        break;
+        //return;
+    }
+}
+console.log('after for-lop');
+
+nums.forEach(num =>{
+    console.log(num);
+    if(num>2){
+        //break; //illegal break
+        return;
+    }
+})
+console.log('after forEach');
+
+let myArr = nums.map(num => {
+    console.log(num);
+    if(num>2){
+       // break; //illegal break statement 
+        return;
+    }
+});
+console.log('my arr is', myArr);
+
+// some() method
+const some = nums.some(num => num > 3);
+console.log(some);
+
+// every() method
+const every = nums.every(num => num > 3);
+console.log(every);
+
+const some1 = nums.some(function(num){
+    console.log(num);
+    return num < 3;
+});
+console.log('some1 is ', some1);
+
+const every2 = nums.every(function(num){
+    console.log(num);
+    return num < 3;
+});
+console.log('every2 is ', every2)

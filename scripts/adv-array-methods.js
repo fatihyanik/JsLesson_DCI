@@ -121,3 +121,7 @@ const every2 = nums.every(function(num){
     return num < 3;
 });
 console.log('every2 is ', every2)
+
+
+const even = nums.some(num => num % 2 === 0);
+console.log(even);

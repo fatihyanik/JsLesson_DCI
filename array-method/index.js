@@ -2,27 +2,29 @@
 
 //Map => array of 10 items and you want to back 10 items from that array
 //Map => returns an Array
-/*
-let numbers = [1,2,3,4,5,6,7,8,9,10]
 
+//let numbers = [1,2,3,4,5,6,7,8,9,10]
+
+/*
 let MappedNumbers = numbers.map(num=>{
     if(num<=5){
         return num;
-    }else{
-        return num*2;
-    }
+    }//else{
+       // return num*2;
+    //}
 })
 console.log(MappedNumbers)
 */
 
 //Filter => you can reduce length of your array
 //Filter => returns an Array
+
 /*
 let numbers = [1,2,3,4,5,6,7,8,9,10]
 
 let FilteredNumbers = numbers.filter(num=>num<=5)
 console.log(FilteredNumbers);
-*/  
+ */
 
 //Reduce
 //returns Array, Object, String, Number
@@ -35,6 +37,7 @@ let sum = numArray.reduce((acc,number)=>{
 console.log(sum)
 */
 
+
 /*
 let numArray =[4,7,2,9,7,6,5] 
 let squareArray = numArray.reduce((acc,number)=>{
@@ -44,7 +47,7 @@ let squareArray = numArray.reduce((acc,number)=>{
 console.log(squareArray);
 */
 
-/*
+
 let randomNumbers = [2,2,3,4,5,3,2,4,5,3,2,4,5,6,2,4,5];
 //we have to occurance of each number inside an array
 // we result => {"2" : 5, "3": 3, "4": 4}
@@ -58,7 +61,7 @@ let result = randomNumbers.reduce((acc,number)=>{
 },{})
 
 console.log(result);
-*/
+
 
 /*
 let string = ["Berlin", "Frankfurt", "Hamburg"];

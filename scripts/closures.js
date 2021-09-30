@@ -52,6 +52,6 @@ console.log(getCount());
 
 //Scharif's Explanation
 /* lexical scope -> a variable defined outside a function can be accessible inside another function defined after the variable declaration, 
-    but it doesn't work the other way around.
-closure -> lexical environment is part of every stack frame and link between identifiers and values,
-     the inner function will go one step up in the call stack and use the outer funcion to get the values needed. */
+                    but it doesn't work the other way around.
+   closure -> lexical environment is part of every stack frame and link between identifiers and values,
+                    6 the inner function will go one step up in the call stack and use the outer funcion to get the values needed. */

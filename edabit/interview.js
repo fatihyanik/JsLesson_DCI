@@ -1,25 +1,26 @@
 //https://dmitripavlutin.com/javascript-this-interview-questions/
 
 //1.question
-const object = {
+/* const object = {
     message: 'Hello, World!',
     getMessage() {
       const message = 'Hello, Earth!';
-      return this.message;
+      return message;
+      //return this.message;
     }
   };
-  console.log(object.getMessage());
+  console.log(object.getMessage()); */
 
 
-  const joe = {
+/*   const joe = {
       firstName: "Joe",
       getFirstName: function(){
           return this.firstName;
       }
   }
   const joeGreeting = joe.getFirstName;
-  console.log(joeGreeting());
-  console.log(joe.getFirstName());
+  console.log(joeGreeting()); // undefined
+  console.log(joe.getFirstName()); // Joe */
 
   /* function Pet(name) {
     this.name = name;
@@ -31,6 +32,23 @@ const object = {
   console.log(getName());     // What is logged? */
 
   //
+/*   const { getName } = cat; alttakinin kisa yolu
+  const { getName } = {
+      name: 'Fluffy',
+      getName: () => this.name
+  } */
+
+
+/*   function Pet(name) {
+    this.firstName = name;
+    this.getFirstName = function(){
+    return this.firstName;
+     }
+}
+  const cat = new Pet('Fluffy');
+  console.log(cat.getFirstName()); // What is logged? Fluffy
+  const { getFirstName } = cat;
+  console.log(getFirstName());     // What is logged? undefined */
 
  /*  function Pet(name) {
     this.name = name;
@@ -66,7 +84,6 @@ logThis(); // ?
     message: 'Hello, World!',
     logMessage() {
       console.log(this.message); // What is logged?
-    
     }
   };
   setTimeout(object.logMessage, 1000); */

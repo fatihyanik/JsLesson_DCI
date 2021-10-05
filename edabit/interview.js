@@ -109,7 +109,8 @@ logMessage.apply(object);
 const boundLogMessage = logMessage.bind(object);
 boundLogMessage(); */
 
-/* const object = {
+/* var who = "World"; //buraya bunu kendim ekledim. arrow function global'a gittigi icin undefined oluyor. var eklenince global deger vermis oluyoruz
+const object = {
     who: 'World',
     greet() {
       return `Hello, ${this.who}!`;
@@ -120,8 +121,7 @@ boundLogMessage(); */
   };
   console.log(object.greet());    // What is logged?
   console.log(object.farewell()); // What is logged? */
-
-/* var length = 4;
+var length = 4;
 function callback() {
   console.log(this.length); // What is logged?
 }
@@ -133,14 +133,15 @@ const object = {
 };
 object.method(callback, 1, 2);
 
-var data = this;
+
+/* var data = this;
 console.log(data);
 
 function logThis(){
     return this;
 }
 
-logThis(); // ? */
+logThis(); */ // ?
 
 /* var instructor = {
     firstName: 'Tim',

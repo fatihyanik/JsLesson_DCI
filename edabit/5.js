@@ -12,9 +12,9 @@ function User(name, isAdmin) {
     this.getUserInfo = function(){
         console.log(`${this.name} is ${this.isAdmin === true ? "an admin" : "not an admin"}`);
     };
-    return {
+    /* return {
         name: "Godzilla"
-    }
+    } */
 }
   
 const user = new User("Jack", false);
